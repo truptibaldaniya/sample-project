@@ -5,6 +5,8 @@ class MyElement extends LitElement {
   static get properties(){
     return{
 
+      value: { type: String, reflect: true },
+
     }
   }
 
@@ -18,9 +20,15 @@ class MyElement extends LitElement {
     ]
   }
 
+  constructor(){
+    super();
+    this.value = 'my Value';
+  }
+
   render(){
     return html`
       <slot></slot>
+      <h1>${this.value}</h1>
     `;
   }
 }
