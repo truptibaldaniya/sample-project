@@ -88,7 +88,7 @@ class MyView2 extends connect(store)(PageViewElement) {
         </p>
       </section>
         
-      <section class="test"><my-element .value="${this._value}"><h1>My Element</h1></my-element></section>
+      <section class="test"><my-element value="Test Property"><h1>My Element</h1></my-element></section>
     `;
   }
 
