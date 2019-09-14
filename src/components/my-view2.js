@@ -87,7 +87,9 @@ class MyView2 extends connect(store)(PageViewElement) {
           </counter-element>
         </p>
       </section>
-        
+
+      ${console.log("test")};
+
       <section class="test"><my-element value="Test Property"><h1>My Element</h1></my-element></section>
     `;
   }
@@ -113,6 +115,7 @@ class MyView2 extends connect(store)(PageViewElement) {
     this._clicks = state.counter.clicks;
     this._value = state.counter.value;
   }
+
 }
 
 window.customElements.define('my-view2', MyView2);
