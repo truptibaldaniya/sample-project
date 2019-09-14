@@ -92,6 +92,14 @@ class MyView2 extends connect(store)(PageViewElement) {
     `;
   }
 
+  firstUpdated(){
+    console.log("call firstUpdated");
+  }
+
+  updated(){
+    console.log("call updated");
+  }
+
   _counterIncremented() {
     store.dispatch(increment());
   }
