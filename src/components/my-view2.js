@@ -45,21 +45,6 @@ class MyView2 extends connect(store)(PageViewElement) {
     return [
       SharedStyles,
       css`
-        @keyframes zoomIn {
-          from {
-            opacity: 0;
-            transform: scale3d(0.3, 0.3, 0.3);
-          }
-
-          50% {
-            opacity: 1;
-          }
-        }
-
-        .test {
-          animation-name: zoomIn;
-          animation-duration: 2s;
-        }
       `
     ];
   }
@@ -88,9 +73,7 @@ class MyView2 extends connect(store)(PageViewElement) {
         </p>
       </section>
 
-      ${console.log("test")};
-
-      <section class="test"><my-element value="Test Property"><h1>My Element</h1></my-element></section>
+     <my-element value="Test Property"></my-element>
     `;
   }
 
